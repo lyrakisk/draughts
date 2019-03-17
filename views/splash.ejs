@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	  <link rel="stylesheet" type="text/css" href="/stylesheets/splash.css">
+	  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+		<title>Play draughts online!</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		<div id="container">
+			<div><h1 class="style-text">Draughts</h1></div>
+			<div><h3>Play draughts Online free against other players!</h3></div>
+			<form action="/game" method="get" ><button type="submit" class="button">LET'S PLAY</button></form>
+			<button id="rules">rules</button>
+			<h2>Visitors : <%= visitors %></h2>
+		    <h2>Games initialized: <%= gamesInitialized %></h2>
+		    <h2>Times you've been here : <span id="times">3<span></h2>
+		</div>
+
+		<script src="/javascripts/splash.js"></script>
+		<script src="/javascripts/cookies.js"></script>
+	</body>
+</html>

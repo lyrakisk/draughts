@@ -1,0 +1,73 @@
+*{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+body{
+    background-color: #575DA9;
+}
+
+.style-text {
+    font-family: Lobster, monospace;
+  }
+
+#container{
+    text-align: center;
+}
+
+h1{
+    margin-top: 40px;
+	font-size: 20vh;
+    color: #D7DD35;
+}
+
+.button{
+	background-color: #02558B;
+    border: none;
+    color: #D7DD35;
+    font-family: Comic Sans MS, monospace;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10vh;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.button:after{
+    content: "🎅";
+}
+
+h3{
+
+    color: #E42D9F;
+    font-family: Comic Sans MS, monospace;
+    font-size: 2.5vh;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    text-align: right;
+}
+
+h2{
+	color: #E42D9F;
+    font-family: Comic Sans MS, monospace;  
+    font-size: 4vh;
+}
+
+#rules{
+    margin-top: 10px;
+    background-color: #02558B;
+    border: none;
+    color: #D7DD35;
+    font-family: Comic Sans MS, monospace;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5vh;
+    cursor: pointer;
+    border-radius: 20px;
+}
