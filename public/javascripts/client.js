@@ -4,7 +4,7 @@
 	var url =  location.host;
 	console.log(url);
 	var socket;
-	if (url.includes("https")) {
+	if (location.protocol == "https:") {
 		socket = new WebSocket("wss:" + url)
 	} else {
 		socket = new WebSocket("ws:" + url)
