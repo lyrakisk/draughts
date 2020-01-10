@@ -3,7 +3,12 @@
 
 	var url =  location.host;
 	console.log(url);
-	var socket = new WebSocket("wss:" + url);
+	var socket;
+	if (url.includes("https")) {
+		socket = new WebSocket("wss:" + url)
+	} else {
+		socket = new WebSocket("ws:" + url)
+	}
 	var message = {};
 	// document.body.mozRequestFullScreen();
 	// every time the player receives a message from the server, it is his time to play
