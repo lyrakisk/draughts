@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 app.get("/game", indexRouter);
 
-// var server = http.createServer(app);
+var server = http.createServer(app);
 const wss = new websocket.Server({ server });
 
 var websockets = [];//property: websocket, value: game
@@ -173,6 +173,6 @@ wss.on("connection", function connection(ws){
 
 // server.listen(port);
 // Start node server
-app.listen( app.get( 'port' ), function() {
+server.listen( app.get( 'port' ), function() {
   console.log( 'Node server is running on port ' + app.get( 'port' ));
   });
